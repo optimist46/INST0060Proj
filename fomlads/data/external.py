@@ -67,7 +67,7 @@ def import_for_classification(
     # represented as such), so we'll convert all these columns to a 2d numpy
     # array object
     inputs = dataframe[input_cols].values
-    return inputs, targets, input_cols, classes, class_values
+    return inputs, targets, input_cols, classes
 
 
 def import_for_regression(
