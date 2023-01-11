@@ -17,7 +17,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 def knn_k_value(train_inputs, train_targets, validation_inputs, validation_targets, number_of_folds):
     mean_accuracies_knn = []
-    k_value = [n for n in range(1,101)]
+    k_value = [n for n in range(1,101) if n%2 == 0]
 
     for k in k_value:
         accuracy = []
